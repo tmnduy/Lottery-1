@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/boder_radius"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back_arrow"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/left_arrow" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:letterSpacing="0.1"
+                android:shadowColor="#424242"
+                android:shadowDx="-20"
+                android:shadowDy="-5"
+                android:shadowRadius="5"
+                android:text="@string/label"
+                android:textAlignment="center"
+                android:textColor="#2714A6"
+                android:textSize="150px"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TVTitle_MEGA655"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center"
+            android:text="KẾT QUẢ XỔ SỐ POWER 6/55"
+            android:textColor="#260"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/boder"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TVThu_MEGA655"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:layout_weight="2"
+                android:text="Thứ Năm"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TVKiVe655"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/boder"
+                android:paddingLeft="10dp"
+                android:text="Thứ Năm"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+<!--        <HorizontalScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="100dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/TVResults655_1"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:background="@drawable/boder_radius_mega"-->
+<!--                    android:fontFamily="@font/chango"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="30"-->
+<!--                    android:textSize="40dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/TVResults655_2"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:background="@drawable/boder_radius_mega"-->
+<!--                    android:fontFamily="@font/chango"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="30"-->
+<!--                    android:textSize="40dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/TVResults655_3"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:background="@drawable/boder_radius_mega"-->
+<!--                    android:fontFamily="@font/chango"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="30"-->
+<!--                    android:textSize="40dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/TVResults655_4"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:background="@drawable/boder_radius_mega"-->
+<!--                    android:fontFamily="@font/chango"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="30"-->
+<!--                    android:textSize="40dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/TVResults655_5"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:background="@drawable/boder_radius_mega"-->
+<!--                    android:fontFamily="@font/chango"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="30"-->
+<!--                    android:textSize="40dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/TVResults655_6"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginRight="20dp"-->
+<!--                    android:background="@drawable/boder_radius_mega"-->
+<!--                    android:fontFamily="@font/chango"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="30"-->
+<!--                    android:textSize="40dp" />-->
+<!--            </LinearLayout>-->
+<!--        </HorizontalScrollView>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/RCMega655"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="6">
+
+</androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="32dp"
+                android:layout_height="100dp"
+                android:fontFamily="@font/chango"
+                android:gravity="center"
+                android:text="|"
+                android:textColor="#FF0000"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/TVResults655_7"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/boder_radius_mega"
+                android:fontFamily="@font/chango"
+                android:gravity="center"
+                android:text="30"
+                android:textColor="#FF0000"
+                android:textSize="40dp" />
+        </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/boder"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/abril_fatface"
+                        android:gravity="center"
+                        android:text="Giải Thưởng"
+                        android:textColor="#000"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boder"
+                        android:fontFamily="@font/abril_fatface"
+                        android:gravity="center"
+                        android:text="Trùng Khớp"
+                        android:textColor="#000"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/abril_fatface"
+                        android:gravity="center"
+                        android:text="Số Lượng Giải"
+                        android:textColor="#000"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boder"
+                        android:fontFamily="@font/abril_fatface"
+                        android:gravity="center"
+                        android:text="Giá Trị Giải (đồng)"
+                        android:textColor="#000"
+                        android:textSize="20dp"/>
+                </LinearLayout>
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/boder"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/alice"
+                        android:gravity="center"
+                        android:text="Jackpot 1"
+                        android:textColor="#000"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boder"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:src="@mipmap/circle" />
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="1"
+                            android:src="@mipmap/circle" />
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="1"
+                            android:src="@mipmap/circle" />
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="1"
+                            android:src="@mipmap/circle" />
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="1"
+                            android:src="@mipmap/circle" />
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:src="@mipmap/circle" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/TVSL_Jackpot1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/abril_fatface"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/TVJackpot_655"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/boder"
+                        android:fontFamily="@font/emblema_one"
+                        android:gravity="center"
+                        android:text="Giá Trị Giải (đồng)"
+                        android:textColor="#F20C8B"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/boder"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/alice"
+                                android:gravity="center"
+                                android:text="Jackpot 2"
+                                android:textColor="#000"
+                                android:textSize="20dp"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/boder"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10dp"
+                                    android:layout_weight="1"
+                                    android:adjustViewBounds="true"
+                                    android:src="@mipmap/circle" />
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10dp"
+                                    android:layout_weight="1"
+                                    android:adjustViewBounds="true"
+                                    android:src="@mipmap/circle" />
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10dp"
+                                    android:layout_weight="1"
+                                    android:adjustViewBounds="true"
+                                    android:src="@mipmap/circle" />
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10dp"
+                                    android:layout_weight="1"
+                                    android:adjustViewBounds="true"
+                                    android:src="@mipmap/circle" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:text="|"
+                                    android:textSize="20dp"
+                                    android:textColor="#000"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    />
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10dp"
+                                    android:layout_weight="1"
+                                    android:adjustViewBounds="true"
+                                    android:src="@mipmap/circle_red" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/TVSL_Jackpot2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/abril_fatface"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textColor="#000" />
+
+                            <TextView
+                                android:id="@+id/TVJackpot2_655"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/boder"
+                                android:fontFamily="@font/emblema_one"
+                                android:gravity="center"
+                                android:text="Giá Trị Giải (đồng)"
+                                android:textColor="#BF3BA9"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/boder"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/alice"
+                        android:gravity="center"
+                        android:text="Giải Nhất"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boder"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:src="@mipmap/circle" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:src="@mipmap/circle" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:src="@mipmap/circle" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:src="@mipmap/circle" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/TVSL_Giai1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/abril_fatface"
+                        android:gravity="center"
+                        android:text="23"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boder"
+                        android:fontFamily="@font/emblema_one"
+                        android:gravity="center"
+                        android:text="10,000,000đ"
+                        android:textColor="#000"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/boder"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/alice"
+                        android:gravity="center"
+                        android:text="Giải Nhì"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boder"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:src="@mipmap/circle" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:src="@mipmap/circle" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:src="@mipmap/circle" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:src="@mipmap/circle" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/TVSL_Giai2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/abril_fatface"
+                        android:gravity="center"
+                        android:text="501"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boder"
+                        android:fontFamily="@font/emblema_one"
+                        android:gravity="center"
+                        android:text="300,000đ"
+                        android:textColor="#000"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/boder"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/alice"
+                        android:gravity="center"
+                        android:text="Giải Ba"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boder"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:src="@mipmap/circle" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:src="@mipmap/circle" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:src="@mipmap/circle" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/TVSL_Giai3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/abril_fatface"
+                        android:gravity="center"
+                        android:text="12,000"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/boder"
+                        android:fontFamily="@font/emblema_one"
+                        android:gravity="center"
+                        android:text="30,000đ"
+                        android:textColor="#000"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+                </ScrollView>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lottery_final">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_lottery_round"
+        android:label="@string/label"
+        android:roundIcon="@mipmap/logo_lottery"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".Lottery_results.Lottery_Vietlott"
+            android:screenOrientation="landscape" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Lottery_results.Lottery_MN_MT" />
+        <activity
+            android:name=".Lottery_results.Lottery_Vietlott655"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Lottery_results.Lottery_MB" />
+        <activity
+            android:name=".Poster">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
